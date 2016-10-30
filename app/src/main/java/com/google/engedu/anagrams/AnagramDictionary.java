@@ -101,7 +101,6 @@ public class AnagramDictionary {
     public String pickGoodStarterWord() {
         int randomNumber;
         String starterWord;
-
         do {
             randomNumber = random.nextInt(sizeToWords.get(wordLength).size());
             starterWord = sizeToWords.get(wordLength).get(randomNumber);
@@ -112,8 +111,6 @@ public class AnagramDictionary {
         }
 
         return starterWord;
-
-
 
     }
 }
